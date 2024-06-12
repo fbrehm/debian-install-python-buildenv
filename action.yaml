@@ -10,14 +10,13 @@ inputs:
 
 runs:
   using: "composite"
-  env:
-    DEBIAN_FRONTEND: "noninteractive"
   steps:
     - name: "Install Debian Python Build Environment"
       id: install-debian-build-pkgs
       shell: bash
       env:
         ADDITIONAL_PACKAGES: ${{ inputs.additional_packages }}
+        DEBIAN_FRONTEND: "noninteractive"
       run: |
         echo "Installing packages for Python build environment."
 
