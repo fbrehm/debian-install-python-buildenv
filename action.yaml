@@ -25,11 +25,11 @@ runs:
         PKGLIST+=" python3-requests python3-setuptools python3-six python3-tz python3-wheel dh-python"
 
         if [[ -n "${ADDITIONAL_PACKAGES}" ]] ; then
-          echo -e "\nAdditional packages: ${ADDITIONAL_PACKAGES}"
+          echo -e "\nAdditional packages: ${ADDITIONAL_PACKAGES}\n"
           PKGLIST+=" ${ADDITIONAL_PACKAGES}"
         fi
 
-        echo -e "\nInstalling packages: ${PKGLIST}"
+        # echo -e "\nInstalling packages: ${PKGLIST}"
         echo "::debug::Installing packages: ${PKGLIST}"
 
         echo "::group::APT install"
