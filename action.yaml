@@ -10,6 +10,8 @@ inputs:
 
 runs:
   using: "composite"
+  env:
+    DEBIAN_FRONTEND: "noninteractive"
   steps:
     - name: "Install Debian Python Build Environment"
       id: install-debian-build-pkgs
