@@ -20,7 +20,7 @@ runs:
         echo "Installing packages for Python build environment."
 
         PKGLIST="sudo locales gettext build-essential gpg debsigs devscripts fakeroot"
-        PKGLIST+=" debhelper automake autotools-dev pkg-config help2man lsb-release ca-certificates""
+        PKGLIST+=" debhelper automake autotools-dev pkg-config help2man lsb-release ca-certificates"
         PKGLIST+=" libdistro-info-perl python3-all python3-packaging python3-babel python3-pip"
         PKGLIST+=" python3-requests python3-setuptools python3-six python3-tz python3-wheel dh-python"
 
